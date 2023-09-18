@@ -1,4 +1,4 @@
-# protomask
+# protomask [![GoDoc](https://pkg.go.dev/badge/github.com/olexnzarov/protomask)](https://pkg.go.dev/github.com/olexnzarov/protomask) [![Github release](https://img.shields.io/github/release/olexnzarov/protomask.svg)](https://github.com/olexnzarov/protomask/releases) [![Test status](https://github.com/olexnzarov/protomask/actions/workflows/tests.yml/badge.svg)](https://github.com/olexnzarov/protomask/actions/workflows/tests.yml)
 
 protomask is a package that lets you update protobuf messages with a help of field masks.
 
