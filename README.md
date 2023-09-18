@@ -11,7 +11,9 @@ protomask is a package that lets you update protobuf messages with a help of fie
 
 ## Installation
 
-`go get github.com/olexnzarov/protomask`
+```sh
+go get github.com/olexnzarov/protomask
+```
 
 ## Usage
 
@@ -43,3 +45,7 @@ func (s *BookServer) UpdateBook(update *pb.Book, updateMask protomask.FieldMask)
 ## Examples
 
 See [protomask_test.go](./protomask_test.go) for more examples on how to use the package. Also, you can check out [gofu](https://github.com/olexnzarov/gofu) for a real-life example of how it can be used.
+
+## License
+
+This code is available under the MIT license, allowing for free use, modification, and distribution.
