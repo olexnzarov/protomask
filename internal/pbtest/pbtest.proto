@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+package test;
+option go_package = "github.com/olexnzarov/protomask/internal/pbtest";
+
+message Price {
+  int64 cents = 1;
+  optional Discount discount = 2;
+}
+
+message Discount {
+  Price full_price = 1;
+  int64 expires_at = 2;
+}
+
+message Book {
+  int64 id = 1;
+  string name = 2;
+  Price price = 3;
+}
+
+message Error {
+  string message = 1;
+}
+
+message PriceReply {
+  oneof response {
+    Error error = 1;
+    Price price = 2;
+  }
+}
